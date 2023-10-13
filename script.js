@@ -13,7 +13,7 @@ function subscribeButton() {
  
 function calculateShipping() {
     // Get the order amount from the input field
-    let orderAmount = document.querySelector('.text-input').value;
+    let orderAmount = document.querySelector('.js-text-input').value;
     orderAmount = parseFloat(orderAmount);
     
 
