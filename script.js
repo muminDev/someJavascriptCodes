@@ -3,8 +3,10 @@ function subscribeButton() {
   
   if (elementButton.innerHTML === 'Subscribe') {
     elementButton.innerHTML = 'Subscribed';
+    elementButton.classList.add('is-subscribed')
   } else {
     elementButton.innerHTML = 'Subscribe';
+    elementButton.classList.remove('is-subscribed')
   }
 };
 
