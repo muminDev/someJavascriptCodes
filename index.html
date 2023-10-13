@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>DOM project</title>
+</head>
+<body>
+  <p>Youtube Subscribe button</p>
+  <button onclick="subscribeButton()"
+  class="js-subscribe-button">Subscribe</button>
+
+  <p>Amazon shipping calculator</p>
+  <p>Orders under $40 = +$10.</p>
+  <p>Orders over $40 = FREE shipping.</p>
+  <input 
+    type="text" 
+    class="text-input"
+    placeholder="Cost of item"
+    onkeydown="handleCostKeydown(event)">
+  <button class="calculate-button"
+    onclick="calculateShipping()">Calculate</button>
+  <p class="displayPrice"></p>
+
+  <button onclick="nineA()">9a</button>
+  <button class="second-button"
+    onclick="changeSecondButton()">9b</button>
+
+  <button 
+  onclick="headsButton('heads')">heads</button>
+  <button
+  onclick="headsButton('tails')"
+  >tails</button>
+  <p class="choice"></p>
+
+  <input type="text" class="text-area" placeholder="Your name please" onkeydown="onKey(event)">
+  <button onclick="showText()">Submit</button>
+
+  <p class="show-text"></p>
+
+  <input type="text" class="type-same" onkeyup="typeSame()">
+  <p class="text-same"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
