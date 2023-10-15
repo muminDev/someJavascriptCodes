@@ -39,12 +39,6 @@ function handleCostKeydown(event) {
   }
 }
 
-console.log(window.document)
-
-function nineA() {
-  console.log(document.querySelector('button'))
-}
-
 function changeSecondButton() {
    const changeButton = document.querySelector('.second-button');
    changeButton.innerHTML = '9b done'
@@ -72,4 +66,32 @@ function onKey(event) {
 function typeSame() {
   let inputText = document.querySelector('.type-same');
   document.querySelector('.text-same').innerHTML = inputText.value; 
+}
+
+let testButton = document.querySelector('.js-button');
+ console.log(testButton.classList.contains('js-button'));
+
+function isToggledButton(button) {
+     if (button === 'gaming') {
+     let gamingButton = document.querySelector('.js-gaming');
+     if (gamingButton.classList.contains('is-toggled')) {
+       gamingButton.classList.remove('is-toggled');
+     } else {
+       gamingButton.classList.add('is-toggled')
+     }
+   } else if (button === 'music') {
+    let gamingButton = document.querySelector('.js-music');
+     if (gamingButton.classList.contains('is-toggled')) {
+       gamingButton.classList.remove('is-toggled');
+     } else {
+       gamingButton.classList.add('is-toggled')
+     }
+   } else if (button === 'tech') {
+    let gamingButton = document.querySelector('.js-tech');
+     if (gamingButton.classList.contains('is-toggled')) {
+       gamingButton.classList.remove('is-toggled');
+     } else {
+       gamingButton.classList.add('is-toggled')
+     }
+    }
 }
