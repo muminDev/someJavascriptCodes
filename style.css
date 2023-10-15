@@ -67,7 +67,16 @@ button {
   border-radius: 5px;
 }
 
+.js-gaming2, .js-music2, .js-tech2{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
 .is-toggled {
   background-color: rgb(230, 230, 230);
   color: black;
 }
+

@@ -95,3 +95,23 @@ function isToggledButton(button) {
      }
     }
 }
+
+function isToggledButton2(value) {
+    const gamingButton2 = document.querySelector('.js-gaming2');
+    const musicButton2 = document.querySelector('.js-music2');
+    const techButton2 = document.querySelector('.js-tech2');
+    
+    if (value === 'gaming2') {
+      gamingButton2.classList.remove('is-toggled');
+      musicButton2.classList.add('is-toggled');
+      techButton2.classList.add('is-toggled');
+    } else if (value === 'music2') {
+      gamingButton2.classList.add('is-toggled');
+      musicButton2.classList.remove('is-toggled');
+      techButton2.classList.add('is-toggled');
+    } else if (value === 'tech2') {
+      gamingButton2.classList.add('is-toggled');
+      musicButton2.classList.add('is-toggled');
+      techButton2.classList.remove('is-toggled');
+    }
+}
