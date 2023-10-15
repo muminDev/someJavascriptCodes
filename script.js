@@ -14,23 +14,22 @@ function subscribeButton() {
 function calculateShipping() {
     // Get the order amount from the input field
     let orderAmount = document.querySelector('.js-text-input').value;
+    const displayPrice = document.querySelector('.displayPrice');
     orderAmount = parseFloat(orderAmount);
-    
+    if (orderAmount <= 0) {
+      displayPrice.innerHTML = 'Error: cost cannot be less than $0'
+    } else {
 
     // Calculate the shipping price
     let totalPrice;
-    
     if (orderAmount < 40) {
       totalPrice = orderAmount + 10;
       totalPrice = totalPrice.toFixed(2);
-
      } else {
       totalPrice = orderAmount;
     }
-
-
-    const displayPrice = document.querySelector('.displayPrice');
     displayPrice.innerHTML = `Total Price: $${totalPrice}`;
+  }
 }
 
 function handleCostKeydown(event) {
