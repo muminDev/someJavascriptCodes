@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>DOM project</title>
+  <title>App</title>
 </head>
 <body>
   <p>YouTube Subscribe Button</p>
@@ -77,6 +77,20 @@
   
   <button class="js-tech2"
     onclick="isToggledButton2('tech2')">Tech</button>
+  <p>Button to change its content after 2 seconds by using setTimeout</p>
+  <button class="start-button"
+    onclick="startTwoSecond()">Start</button>
+  <div>
+    <button class="add-cart-button"
+      onclick="addToCart()">Add to cart</button>
+    <p class="text-added"></p>
+  </div>
+  <div>
+    <button class="add-message"
+      onclick="addQuantity()">Add message</button>
+    <button class="remove-mesage"
+      onclick="removeQuan()">Remove message</button>
+  </div>
 <script src="script.js"></script>
 </body>
 </html>

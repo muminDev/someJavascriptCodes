@@ -114,3 +114,62 @@ function isToggledButton2(value) {
       techButton2.classList.remove('is-toggled');
     }
 }
+
+const add = function() {
+  console.log(2 + 3);
+}
+
+add();
+add();
+
+function runTwice(fun) {
+  fun();
+  fun();
+}
+
+runTwice(add);
+
+function startTwoSecond() {
+  const startButton = document.querySelector('.start-button');
+    startButton.innerHTML = 'Loading...'
+  setTimeout(function() {
+    startButton.innerHTML = 'Finished'
+  }, 2000);
+}
+let timerId;
+function addToCart() {
+  clearTimeout(timerId);
+  const startButton = document.querySelector('.add-cart-button');
+  const textAdded = document.querySelector('.text-added');
+  startButton.innerHTML = 'Remove'  
+  textAdded.innerHTML = 'Added'
+  timerId = setTimeout(function() {
+    textAdded.innerHTML = ''
+  }, 2000);
+}
+/*
+//function to change the title of the webpage for every 1 second
+let interId = setInterval(function() {
+  document.title = '(2) New messages';
+}, 1000);
+
+setInterval(function() {
+  document.title = 'App'
+}, 2000);
+*/
+
+let messageQuantity = 0;
+function addQuantity() {
+  messageQuantity++;
+  document.title = `(${messageQuantity}) New messages`
+}
+
+function  removeQuan() {
+  if (messageQuantity === 1) {
+    document.title = 'App'
+    messageQuantity--;
+  } else {
+    messageQuantity--;
+    document.title = `(${messageQuantity}) New messages`
+  }
+}

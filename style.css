@@ -67,7 +67,12 @@ button {
   border-radius: 5px;
 }
 
-.js-gaming2, .js-music2, .js-tech2{
+.js-gaming2, 
+.js-music2, 
+.js-tech2,
+.start-button,
+.add-cart-button
+{
   background-color: black;
   color: white;
   padding: 10px 20px;
